@@ -1,0 +1,84 @@
+html{
+		font-family: 'Exo', sans-serif;
+}
+
+/*header*/
+#logo{
+	width:15em;
+}
+ul{
+	list-style-type: none;
+}
+ul a{
+	font-family: 'Exo', sans-serif;
+	color: black;
+	font-size: 1em;
+	padding-left:2em;
+}
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(180,180,180);
+}
+li{
+	display: inline;
+	
+}
+
+/*content*/
+table{
+	margin: 2em 1em 1em 1em;
+	width: 1000px;
+}
+td{
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+}
+.avatarImg{
+	width: 18em;
+}
+.avatar a:hover img {
+	opacity:0.4;  filter:alpha(opacity=30);
+}
+.imgDiv{
+	padding-bottom:1em;
+}
+.imgDisplay{
+	width:100%;
+	border-style: solid;
+	border-color: rgb(180,180,180);
+	border-width: 1px;
+}
+.descrip{
+	vertical-align: text-top;
+	font-size: 0.8em;
+	color: rgb(150,150,150);
+	padding: 0em 1em 1em 1em;
+	font-family: 'Questrial', sans-serif;
+}
+.descrip p{
+	line-height:120%;
+}
+#form{
+	color:rgb(180,180,180);
+	font-size: 0.8em;
+}
+
+/*footer*/
+#cr{
+	padding-top:2em;
+	font-family: 'Exo', sans-serif;
+	color: rgb(150,150,150);
+	font-size: 0.75em;
+}
+hr{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    size: 1px;
+    color: rgb(180,180,180);
+}
