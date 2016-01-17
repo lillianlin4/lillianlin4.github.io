@@ -11,7 +11,7 @@ ul{
 }
 ul a{
 	font-family: 'Exo', sans-serif;
-	color: black;
+	color: rgb(180,180,180);
 	font-size: 1em;
 	padding-left:2em;
 }
@@ -22,11 +22,20 @@ a:visited{
 	text-decoration: none;
 }
 a:hover{
-	color: rgb(180,180,180);
+	color: rgb(18,195,244);
 }
 li{
-	display: inline;
-	
+	display: inline;	
+}
+
+.sourceLink{
+	color: rgb(180,180,180);
+}
+.sourceLink:hover{
+	color: rgb(18,195,244);
+}
+.sourceLink{
+	color: rgb(180,180,180);
 }
 
 /*content*/
@@ -37,10 +46,10 @@ table{
 td{
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 1.8em;
 }
 .avatarImg{
-	width: 18em;
+	width: 300px;
 }
 .avatar a:hover img {
 	opacity:0.4;  filter:alpha(opacity=30);
@@ -62,7 +71,7 @@ td{
 	font-family: 'Questrial', sans-serif;
 }
 .descrip p{
-	line-height:120%;
+	line-height:140%;
 }
 #form{
 	color:rgb(180,180,180);
