@@ -8,7 +8,6 @@ html{
 	border-color: transparent;
 	font-size: 1.2em;
 	font-family: 'Exo', sans-serif;
-
 	padding: 2em 0em 1em 0em;
 }
 .navbar-default .navbar-nav > li > a{
@@ -79,10 +78,17 @@ h1{
 .descrip p{
 	line-height:140%;
 }
+
+/*FORM*/
 #form{
-	color:rgb(180,180,180);
-	font-size: 0.8em;
+	color:black;
+	font-size: 1em;
 }
+.formLabels{
+	color: white;
+}
+
+/*LINE*/
 hr{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -107,15 +113,3 @@ Grey: rgb(150,150,150);
 Lighter Grey: rgb(180,180,180);
 */
 
-
-/*header*/
-#logo{
-	width:15em;
-}
-
-.imgDisplay{
-	width:100%;
-	border-style: solid;
-	border-color: rgb(180,180,180);
-	border-width: 1px;
-}
