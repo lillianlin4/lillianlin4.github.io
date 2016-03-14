@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*GENERAL*/
+*{
+	padding:0px;
+	margin:0px;
+}
+@font-face {
+    font-family: Brush;
+    src: url("../font/MGS4_Brush.ttf");
+}
+body{
+	font-family: 'Della Respira', serif;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	line-height: 160%;
+	
+}
+
+
+/*NAV BAR*/
+ul{
+	font-family: Brush;
+	text-decoration:none;
+	text-align: right;
+	padding-top: 30px;
+}
+li{
+	display:inline-block;
+	font-size: 2.5em;
+	padding-right: 40px;
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+a:visited{
+	color:black;
+}
+a:hover{
+	color:#CC0000;
+}
+
+/*FOOTER*/
+footer{
+	font-family: Brush;
+	font-size:1.2em;
+	color:black;
+	position:fixed;
+	right:20px;
+	bottom:10px;
+}
+
+/*INDEX PAGE*/
+h1{
+	font-size: 6em;
+	font-family: Brush;
+	margin-top: 6%;
+	line-height:100%;
+}
+h2{
+	font-size: 1.8em;
+}
+h3{
+	font-size: 1.5em;
+	color:#CC0000;
+	margin-top: -35px;
+}
+#read_button{
+	font-family: Brush;
+	font-size: 3.5em;
+	vertical-align: center;
+	text-align: center;
+	color:black;
+	
+	height:38px;
+	width:120px;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding-top:20px;
+	
+	margin:auto;
+	margin-top: 10%;
+}
+#read_button:hover{
+	color:#CC0000;
+	/*background-color:red;*/
+	border: 3px solid #CC0000;
+}
+#illustrate{
+	margin-top:7%;
+	padding:10px;
+	font-family: Brush;
+	font-size: 2em;
+}
+#translate{
+	padding-bottom:15px;
+	font-size:0.7em;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+	p{
+		font-size: 0.9em;
+		line-height: 150%;
+	}
+}
+@media screen and (max-width: 600px) {
+	p{
+		font-size: 0.7em;
+		line-height: 130%;
+	}
+}

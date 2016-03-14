@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Chinese Creation Myth</title>
+<!-- LINK -->
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+<!-- SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		imgOut = new Image();
+		imgOver1 = new Image();
+		imgOver2 = new Image();
+		
+		imgOut.src = "./img/0.jpg";
+		imgOver1.src = "./img/0_red.jpg";
+		 
+		$('html').css('background-image', 'url('+ imgOut.src +')'); 
+		$('html').css('background-size', 'cover'); 
+		$('html').css('background-repeat', 'no-repeat'); 
+	});
+	function onOver1(){
+		$('html').css('background-image', 'url('+ imgOver1.src +')');
+	};
+	function onOut(){
+		$('html').css('background-image', 'url('+ imgOut.src +')');
+	};		
+</script>
+<!-- STYLE -->
+<style>
+	.text{
+	width: 60%;
+	padding-top: 0px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(36,36,36,0.6);
+	color:white;
+	z-index:99;
+	margin: auto;
+	margin-top: 35%;
+	margin-bottom: 2%;
+	}
+	@media screen and (max-width: 800px) {
+		.text{
+			width: 80%;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.text{
+			width: 90%;
+		}
+	}
+</style>
+
+</head>
+
+<body>
+	<header>
+    	<ul>
+        	<li><a href="./p1.html" onMouseOver="onOver1()" onMouseOut="onOut()">Break egg</a></li>
+            <li><a href="./n1.html" onMouseOver="onOver2()" onMouseOut="onOut()">Skip time</a></li>
+        </ul>
+    </header>
+    
+    <main>
+    	<div class="text">
+        	<p>Long, long ago, when heaven and earth were still one, the entire universe was contained in an egg-shaped cloud. All the matter of the universe swirled chaotically in that egg.</p>
+        </div>
+    </main>
+    
+    <footer>
+    	
+    </footer>
+
+
+</body>
+</html>

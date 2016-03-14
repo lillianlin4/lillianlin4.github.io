@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Chinese Creation Myth</title>
+<!-- LINK -->
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+<!-- SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		imgOver = new Image();
+		imgOut = new Image();
+		imgOver.src = "./img/n1_red.jpg";
+		imgOut.src = "./img/n1.jpg"; 
+		$('html').css('background-image', 'url('+ imgOut.src +')'); 
+		$('html').css('background-size', 'cover'); 
+		$('html').css('background-repeat', 'no-repeat'); 
+	});
+	function onOver(){
+		$('html').css('background-image', 'url('+ imgOver.src +')');
+	};
+	function onOut(){
+		$('html').css('background-image', 'url('+ imgOut.src +')');
+	};		
+</script>
+<!-- STYLE -->
+<style>
+	.text{
+	width: 25%;
+	padding-top: 0px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(36,36,36,0.6);
+	color:white;
+	z-index:99;
+	margin-left: 5%;
+	margin-top:2%;
+	margin-bottom: 2%;
+	}
+	@media screen and (max-width: 800px) {
+		.text{
+			width: 40%;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.text{
+			width: 60%;
+		}
+	}
+</style>
+
+</head>
+
+<body>
+
+	<header>
+    	<ul>
+            <li><a href="./n2.html" onMouseOver="onOver()" onMouseOut="onOut()">Make something</a></li>
+        </ul>
+    </header>
+
+    <main>
+    	<div class="text">
+        	<p>Many centuries later, there was a goddess named Nü Wa who roamed this wild world that Pan Gu had left behind, and she became lonely in her solitude. Stopping by a pond to rest, she saw her reflection and realized that there was nothing like herself in the world. She resolved to make something like herself for company.</p>
+        </div>
+    </main>
+
+    <footer>
+    	
+    </footer>
+</body>
+</html>
