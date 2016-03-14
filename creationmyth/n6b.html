@@ -10,20 +10,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        imgOver = new Image();
         imgOut = new Image();
-        imgOver.src = "./img/n2_red.jpg";
-        imgOut.src = "./img/n2.jpg"; 
+        imgOver1 = new Image();
+        imgOver2 = new Image();
+        
+        imgOut.src = "./img/n6b.jpg";
+        imgOver1.src = "./img/n6b_red1.jpg";
+        imgOver2.src = "./img/n6b_red2.jpg";
+         
         $('html').css('background-image', 'url('+ imgOut.src +')'); 
         $('html').css('background-size', 'cover'); 
         $('html').css('background-repeat', 'no-repeat'); 
     });
-    function onOver(){
-        $('html').css('background-image', 'url('+ imgOver.src +')');
-    };
     function onOut(){
         $('html').css('background-image', 'url('+ imgOut.src +')');
-    };      
+    };
+    function onOver1(){
+        $('html').css('background-image', 'url('+ imgOver1.src +')');
+    };
+    function onOver2(){
+        $('html').css('background-image', 'url('+ imgOver2.src +')');
+    };
+        
 </script>
 <!-- STYLE -->
 <style>
@@ -35,18 +43,18 @@
     background-color: rgba(36,36,36,0.6);
     color:white;
     z-index:99;
-    margin-left: 5%;
-    margin-top:2%;
-    margin-bottom: 2%;
+    margin: auto;
+    margin-top:8%;
+    margin-bottom:4%;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         .text{
-            width: 40%;
+            width: 60%;
         }
     }
     @media screen and (max-width: 600px) {
         .text{
-            width: 60%;
+            width: 80%;
         }
     }
 </style>
@@ -54,24 +62,27 @@
 </head>
 
 <body>
-
     <header>
         <ul>
-            <li><a href="./n3.html" onMouseOver="onOver()" onMouseOut="onOut()">Make more</a></li>
+            <li><a href="./n6a.html" onMouseOver="onOver1()" onMouseOut="onOut()">Heal sky</a></li>
+            <li><a href="./n7.html" onMouseOver="onOver2()" onMouseOut="onOut()">Lay to rest</a></li>
         </ul>
     </header>
 
     <main>
-        <div class="text">
-            <p>From the edge of the pond she took some mud and shaped it in the form of a human being. At first her creation was lifeless, and she set it down. It took life as soon as it touched the soil, however, and soon the human was dancing and celebrating its new life. Pleased with her creation, Nü Wa made more of them, and soon her loneliness disappeared in the crowd of little humans around her.</p>
+    	<div class="text">
+        	<p>Nü Wa drove the beasts back and healed the earth.</p>
         </div>
     </main>
 
     <footer>
-        
+    
     </footer>
+
+
 </body>
 </html>
+
 
 
 

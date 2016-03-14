@@ -3,41 +3,70 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>A Chinese Creation Myth</title>
+<!-- LINK -->
 <link rel="stylesheet" type="text/css" href="./css/main.css">
-<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-<style>
-    body{
-        background-image:url("./img/p2.jpg");
-        background-size: cover;
-        /*background-attachment: fixed;*/
-        background-repeat: no-repeat;
-    }
-</style>
+<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+<!-- SCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
-	function onOver(){
-		document.body.style.backgroundImage = "url('./img/p2_red.jpg')";
-	}
-	function onOut(){
-		document.body.style.backgroundImage = "url('./img/p2.jpg')";
-	}		
+    $(document).ready(function(){
+        imgOver = new Image();
+        imgOut = new Image();
+        imgOver.src = "./img/p2_red.jpg";
+        imgOut.src = "./img/p2.jpg"; 
+        $('html').css('background-image', 'url('+ imgOut.src +')'); 
+        $('html').css('background-size', 'cover'); 
+        $('html').css('background-repeat', 'no-repeat'); 
+    });
+    function onOver(){
+        $('html').css('background-image', 'url('+ imgOver.src +')');
+    };
+    function onOut(){
+        $('html').css('background-image', 'url('+ imgOut.src +')');
+    };      
 </script>
+<!-- STYLE -->
+<style>
+    .text{
+    width: 60%;
+    padding-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(36,36,36,0.6);
+    color:white;
+    z-index:99;
+    margin: auto;
+    margin-top: 35%;
+    margin-bottom: 2%;
+    }
+    @media screen and (max-width: 800px) {
+        .text{
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .text{
+            width: 90%;
+        }
+    }
+</style>
+
 </head>
 
 <body>
-	<header>
-   		
-    	<ul>
-        	<li><a href="./p3.html" onMouseOver="onOver()" onMouseOut="onOut()">Seperate Heavens and Earth</a></li>
+    <header>
+        <ul>
+            <li><a href="./p3.html" onMouseOver="onOver()" onMouseOut="onOut()">Seperare heavens and earth</a></li>
         </ul>
     </header>
+    
     <main>
-    	<div class="text">
-        	<p>The lighter purer elements drifted upwards to make the sky and heavens, and the heavier impure elements settled downwards to make the earth.</p>
-
+        <div class="text">
+            <p>The lighter purer elements drifted upwards to make the sky and heavens, and the heavier impure elements settled downwards to make the earth.</p>
         </div>
     </main>
+    
     <footer>
     
     </footer>
@@ -45,5 +74,6 @@
 
 </body>
 </html>
+
 
 

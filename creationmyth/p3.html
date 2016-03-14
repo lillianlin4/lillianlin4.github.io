@@ -3,32 +3,70 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>A Chinese Creation Myth</title>
+<!-- LINK -->
 <link rel="stylesheet" type="text/css" href="./css/main.css">
-<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+<!-- SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        imgOver = new Image();
+        imgOut = new Image();
+        imgOver.src = "./img/p3_red.jpg";
+        imgOut.src = "./img/p3.jpg"; 
+        $('html').css('background-image', 'url('+ imgOut.src +')'); 
+        $('html').css('background-size', 'cover'); 
+        $('html').css('background-repeat', 'no-repeat'); 
+    });
+    function onOver(){
+        $('html').css('background-image', 'url('+ imgOver.src +')');
+    };
+    function onOut(){
+        $('html').css('background-image', 'url('+ imgOut.src +')');
+    };      
+</script>
+<!-- STYLE -->
 <style>
-    body{
-        background-image:url("./img/p3.jpg");
-        background-size: cover;
-        /*background-attachment: fixed;*/
-        background-repeat: no-repeat;
+    .text{
+    width: 25%;
+    padding-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(36,36,36,0.6);
+    color:white;
+    z-index:99;
+    margin-left: 5%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    }
+    @media screen and (max-width: 800px) {
+        .text{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .text{
+            width: 60%;
+        }
     }
 </style>
+
 </head>
 
 <body>
-	<header>
-   		
-    	<ul>
-        	<li><a href="#">Continue Holding the Sky</a></li>
+    <header>
+        <ul>
+            <li><a href="./p4.html" onMouseOver="onOver()" onMouseOut="onOut()">Continue holding sky</a></li>
         </ul>
     </header>
+    
     <main>
-    	<div class="text">
-        	<p>In the midst of this new world, Pan Gu worried that heaven and earth might mix again; so he resolved to hold them apart, with the heavens on his head and the earth under his feet. As the two continued to separate, Pan Gu grew to hold them apart.</p>
-
+        <div class="text">
+            <p>In the midst of this new world, Pan Gu worried that heaven and earth might mix again; so he resolved to hold them apart, with the heavens on his head and the earth under his feet. As the two continued to separate, Pan Gu grew to hold them apart.</p>
         </div>
     </main>
+    
     <footer>
     
     </footer>
@@ -36,5 +74,6 @@
 
 </body>
 </html>
+
 
 

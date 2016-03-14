@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -10,28 +11,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
+		imgOver = new Image();
 		imgOut = new Image();
-		imgOver1 = new Image();
-		imgOver2 = new Image();
-		
-		imgOut.src = "./img/0.jpg";
-		imgOver1.src = "./img/0_red1.jpg";
-		imgOver2.src = "./img/0_red2.jpg";
-		 
+		imgOver.src = "./img/p5_red.jpg";
+		imgOut.src = "./img/p5.jpg"; 
 		$('html').css('background-image', 'url('+ imgOut.src +')'); 
 		$('html').css('background-size', 'cover'); 
 		$('html').css('background-repeat', 'no-repeat'); 
 	});
+	function onOver(){
+		$('html').css('background-image', 'url('+ imgOver.src +')');
+	};
 	function onOut(){
 		$('html').css('background-image', 'url('+ imgOut.src +')');
-	};
-	function onOver1(){
-		$('html').css('background-image', 'url('+ imgOver1.src +')');
-	};
-	function onOver2(){
-		$('html').css('background-image', 'url('+ imgOver2.src +')');
-	};
-		
+	};		
 </script>
 <!-- STYLE -->
 <style>
@@ -64,19 +57,18 @@
 <body>
 	<header>
     	<ul>
-        	<li><a href="./p1.html" onMouseOver="onOver1()" onMouseOut="onOut()">Break egg</a></li>
-            <li><a href="./n1.html" onMouseOver="onOver2()" onMouseOut="onOut()">Forward time</a></li>
+        	<li><a href="./n1.html" onMouseOver="onOver()" onMouseOut="onOut()">Forward time</a></li>
         </ul>
     </header>
     
     <main>
     	<div class="text">
-        	<p>Long, long ago, when heaven and earth were still one, the entire universe was contained in an egg-shaped cloud. All the matter of the universe swirled chaotically in that egg.</p>
+        	<p>His arms and legs became the four directions and the moutains. His blood became the rivers, and his sweat became the rain and dew. His voice became the thunder, and his breath became the winds. His hair became the grass, and his veins became the roads and paths. His teeth and bones became the minerals and rocks, and his flesh became the soil of the fields. Up above, his left eye became the sun, and his right eye became the moon. Thus in death, as in life, Pan Gu made the world as it is today.</p>
         </div>
     </main>
     
     <footer>
-    	
+    
     </footer>
 
 

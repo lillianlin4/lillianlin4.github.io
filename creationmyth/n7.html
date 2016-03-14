@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -10,28 +11,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
+		imgOver = new Image();
 		imgOut = new Image();
-		imgOver1 = new Image();
-		imgOver2 = new Image();
-		
-		imgOut.src = "./img/0.jpg";
-		imgOver1.src = "./img/0_red1.jpg";
-		imgOver2.src = "./img/0_red2.jpg";
-		 
+		imgOver.src = "./img/n7_red.jpg";
+		imgOut.src = "./img/n7.jpg"; 
 		$('html').css('background-image', 'url('+ imgOut.src +')'); 
 		$('html').css('background-size', 'cover'); 
 		$('html').css('background-repeat', 'no-repeat'); 
 	});
+	function onOver(){
+		$('html').css('background-image', 'url('+ imgOver.src +')');
+	};
 	function onOut(){
 		$('html').css('background-image', 'url('+ imgOut.src +')');
-	};
-	function onOver1(){
-		$('html').css('background-image', 'url('+ imgOver1.src +')');
-	};
-	function onOver2(){
-		$('html').css('background-image', 'url('+ imgOver2.src +')');
-	};
-		
+	};		
 </script>
 <!-- STYLE -->
 <style>
@@ -64,19 +57,18 @@
 <body>
 	<header>
     	<ul>
-        	<li><a href="./p1.html" onMouseOver="onOver1()" onMouseOut="onOut()">Break egg</a></li>
-            <li><a href="./n1.html" onMouseOver="onOver2()" onMouseOut="onOut()">Forward time</a></li>
+        	<li><a href="./index.html" onMouseOver="onOver()" onMouseOut="onOut()">Back to beginning</a></li>
         </ul>
     </header>
     
     <main>
     	<div class="text">
-        	<p>Long, long ago, when heaven and earth were still one, the entire universe was contained in an egg-shaped cloud. All the matter of the universe swirled chaotically in that egg.</p>
+        	<p>Exhausted by her labors, she soon lay down to die and, like Pan Gu, from her body came many more features to adorn the world that she had restored.</p>
         </div>
     </main>
     
     <footer>
-    	
+    
     </footer>
 
 
