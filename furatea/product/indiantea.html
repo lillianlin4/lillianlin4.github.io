@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Indian Blend</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,600italic,600,400italic,400,300italic" rel="stylesheet" type="text/css">
+<style>
+/*--------------------------------------------NAVIGATION BAR--------------------------------------------*/
+/*SITEID*/
+#siteID{
+	width:320px;
+	margin-top:10px;
+	margin-left:10px;
+	position:absolute;
+	z-index:99;	
+}
+/*NAVBAR*/
+.navbar-default{
+	background-color:white;
+	border:none;
+	padding-top:10px;
+	z-index:9;
+}
+/*NAVBAR LINKS*/
+.navbar-default .navbar-nav > li > a{
+	color:gray;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR ACTIVE*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR COLLAPSE SUBMENU*/
+nav div div div ul{
+	text-align:right;
+	padding-right:15px;
+}
+.dropdown-menu{
+	border:none;
+}
+/*CART ICON*/
+#icon_cart{
+	width:25px;
+	height:20px;
+	background-image: url('../img/icons/icon_cart1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float:right;
+}
+#icon_cart:hover{
+	background-image: url('../img/icons/icon_cart2.png');
+}
+/*----------------------------------------------FOOTER------------------------------------------------------*/
+footer{
+	width:100%;
+	background-color:white;
+	margin-bottom:25px;
+	clear:both;
+}
+.footerText{
+	width:80%;
+	margin:auto;
+	padding:10px 0 10px 0;
+ 	color:gray;
+	font-size: .8em;
+	vertical-align:center;
+}
+.footerText div:nth-child(1){
+	margin-top:5px;
+	float:left;
+}
+.footerText div:nth-child(2){
+	margin-top:-5px;
+	float:right;
+}
+/*SOCIAL MEDIA*/
+.social-slide {
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin-left:10px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide:hover {
+	background-size:cover;
+	background-position: 0px -24px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.facebook-hover {
+	background-image: url('../img/social/facebook-hover.png');
+}
+.google-hover {
+	background-image: url('../img/social/google-hover.png');
+}
+.linkedin-hover {
+	background-image: url('../img/social/linkedin-hover.png');
+}
+.instagram-hover {
+	background-image: url('../img/social/instagram-hover.png');
+}
+</style>
+</head>
+<body>
+		<header>
+    	<nav id="top">
+        	<!--SITEID-->
+        	<a href="../index.html"><img id="siteID" src="../img/siteID.png"></a>
+			<div class="navbar navbar-default navbar-static-top">
+            	<div class="container">
+                    <!--COLLAPSE BUTTON -->
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    	<span class = "icon-bar"></span>
+                      <span class = "icon-bar"></span>
+                      <span class = "icon-bar"></span>
+                    </button>
+                    <!--NAV MENU-->
+                    <div class = "collapse navbar-collapse navHeaderCollapse">
+                    	<ul class="nav navbar-nav navbar-right">
+      						<li><a href="./productmain.html">Products</a></li>
+                            <li><a href="../shops.html">Shops</a></li>
+                            <li><a href="../suppliers.html">Suppliers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="#"><div id="icon_cart"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+	<main>
+        <section id="productmain">
+        	<section id="pictures">
+        	<h1>Indian Blend</h1>
+        	<iframe src="images/indiablendfront.jpg" name="imgbox" id="imgbox"></iframe>
+          	<a href="images/indiablendfront.jpg" target="imgbox"><img src="images/indiablendfront.jpg"></a>
+            <a href="images/indiablendside.jpg" target="imgbox"><img src="images/indiablendside.jpg"></a>
+			<a href="images/teabag.jpg" target="imgbox"><img src="images/teabag.jpg"></a>
+			</section>
+            <section>
+            <h3>Description</h3>
+           	<p>Savor our Indian Blend, crafted from the freshest ingredients from the Indian sub-continent. We blend native Indian pine, Pinus roxburghii, with cardamom, dried rose petals, cinnamon and ginger to create the unique taste. Indian Blend can be enjoyed cold or hot.</p>
+            <small>
+            25 Tea Bags • Net Weight .85 oz (24g)
+            </small> 
+            <h3>$25.00</h3> 
+            
+            <h4><a href="#">Add To Cart</a></h4> 
+                <article>
+                <h3>Reviews</h3>
+                <p><i>"Fura Tea's Indian Blend is so delicious I have it every morning and every evening."</i> - Padma Lakshmi</p> 
+                 <p><i>"Indian Blend artfully mixes the flavors of India into one teacup"</i> - TimeOut Magazine</p> 
+                 <p><i>"Fura Tea has another hit with Indian Blend!"</i> - Bon Appétit Magazine</p> 
+                </article> 
+                </section>
+            </section>
+  
+        
+    
+        <section id="ingredients">
+        	<section class="title">
+             <h1>Ingredients</h1>
+        	</section>
+            <section id="ingredientproduct">
+                	<ul>
+                    	<li>
+                        <a href="#"><img src="images/pine.png" id="pine"></a>
+                        	<ul><div id="arrow-up1"></div>
+                            	<li>
+                                	<h3>Pine Needles</h3>
+            							<p>Boasting four to five times the amount of Vitamin C found in a lemon, pine needle tea has been a medicinal favorite of indigenous peoples for centuries. Also high in fat-soluble Vitamin A - an antioxidant essential for healthy vision, skin and hair regeneration and red blood cell production, it is frequently prescribed by herbalist healers as an expectorant to thin mucus secretions.</p> 
+                                      	<img src="images/health1.png"><img src="images/health5.png">
+                                </li>
+                         	</ul>
+                   		</li><li>
+                        
+                        <a href="#"><img src="images/cardamom3.png" id="cardamom"></a>
+                        	<ul><div id="arrow-up2"></div>
+                            	<li>
+                                	<h3>Cardamom</h3>
+            							<p>In India, cardamom was traditionally considered as an herb and was one of the ingredients in Ayurveda, the ancient Indian science of medicine and lifestyle. It was believed to be a remedy for teeth and gum infections, throat problems, congestion of the lungs, pulmonary tuberculosis, inflammation of the eyelids, gastrointestinal disorders, disintegrating kidney, and gall bladder stones, and was also used as an antidote for poisons and venoms.</p> 
+                                        <img src="images/health6.png"><img src="images/health3.png">
+                                </li>
+                         	</ul>
+                   		</li><li>
+                        <a href="#"><img src="images/rosepetals1.png" id="rose"></a>
+                        	<ul><div id="arrow-up3"></div>
+                            	<li>
+                                	<h3>Dried Rose Petals</h3>
+            							<p>As well as its high vitamin C content, dried roses contains a large amount of polyphenols along with several other antioxidants like quercetin and ellagic acid. Polyphenols are natural antioxidants which are well known for their ability to repair cellular damage and protect the body against serious illnesses including heart disease, bone weakness and cancer.</p> 
+                                        <img src="images/health3.png"><img src="images/health2.png">
+                                </li>
+                         	</ul>
+                   		</li><li>
+                        <a href="#"><img src="images/cinnamon.png" id="cinnamon"></a>
+                        	<ul><div id="arrow-up4"></div>
+                            	<li>
+                                	<h3>Cinnamon</h3>
+            							<p>In Indian Ayurvedic and Unani medicine, cinnamon is used as a single drug to treat flatulence, impaired digestion and metabolism, intestinal tract inflammation, peptic ulcer, vomiting, hemorrhoids, failure of penile erection, worm infestation, dryness of mouth, thirst, rhinitis/sinusitis, acute pain of nervine origin, blood disorders, tubercular ulcers, scorpion bite, and toothache. Cinnamon leaf oil has been used externally for rheumatism and inflammation.</p> 
+                                        <img src="images/health2.png"><img src="images/health4.png">
+                                </li>
+                         	</ul>
+                   		</li><li>
+                        <a href="#"><img src="images/ginger2.png" id="ginger"></a>
+                        	<ul><div id="arrow-up5"></div>
+                            	<li>
+                                	<h3>Fresh Ginger</h3>
+            							<p>Among the staple spices that are used in Indian cuisine is ginger. Ginger is regarded as an excellent carminative (a substance which promotes the elimination of intestinal gas) and intestinal spasmolytic (a substance which relaxes and soothes the intestinal tract). Modern scientific research has revealed that ginger possesses numerous therapeutic properties including antioxidant effects, an ability to inhibit the formation of inflammatory compounds, and direct anti-inflammatory effects.</p> 
+                                        <img src="images/health6.png"><img src="images/health3.png">
+                                </li>
+                         	</ul>
+                   		</li>
+                        
+                    </ul>
+            </section>
+       
+    	</section>
+        <section id="origin">
+        	<section class="title">
+             <h1>Origin</h1>
+        	</section>
+            <section>
+            <h4>Fura Tea's Indian Blend is made with the help of small farms in three different areas in India.</h4>
+            <h3>Click the dots to see more</h3>
+            <iframe name="originbox" id="originbox"></iframe>
+            </section>
+        	<section id="map">
+           	<a href="images/keralafarm.jpg" target="originbox"><div id="spot1">
+            <br><p>Kerala, India</p></div></a>
+            <a href="images/westbengalfarm.jpg" target="originbox"><div id="spot2">
+            <br><p>West Bengal, India</p></div></a>
+            <a href="images/pineneedlesindia.jpg" target="originbox"><div id="spot3">
+            <br><p>Himachal Pradesh, India</p></div></a>
+            <img src="images/indiamap.png">
+    		</section>
+
+        </section>
+    </main>
+    
+    <footer>
+    	<div class="footerText">
+        	<div>Copyright &copy; 2016 Fura Tea</div>
+            <div>
+                <a href="#"><div class="facebook-hover social-slide"></div></a>
+                <a href="#"><div class="google-hover social-slide"></div></a>
+                <a href="#"><div class="linkedin-hover social-slide"></div></a>
+                <a href="#"><div class="instagram-hover social-slide"></div></a>
+            </div>
+        </div>
+	</footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

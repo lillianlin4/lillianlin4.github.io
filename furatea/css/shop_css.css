@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: opensansbold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: Cocon;
+    src: url(../fonts/cocon.ttf);
+	}
+	
+html, body {
+	 margin: 0;
+	 padding: 0;
+	 }
+
+
+main {
+	margin: auto;
+	vertical-align: text-top;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	
+	}
+
+h2 {
+	font-family: opensansbold;
+	font-size: 1.2em;
+	color: rgb(66,46,32);
+	
+	}
+p {
+	font-family: opensans;
+	font-size: 1.2em;
+	width: 600px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+a:link {
+	text-decoration: none;
+	color: rgb(199,178,153);
+	}
+
+a:visited {
+	
+	text-decoration: none;
+	color: rgb(199,178,153);
+	}  
+a:hover {
+	color: rgb(255,188,41);
+}
+/*--------------------------------------------NAVIGATION BAR--------------------------------------------*/
+/*SITEID*/
+#siteID{
+	width:320px;
+	margin-top:10px;
+	margin-left:10px;
+	position:absolute;
+	z-index:99;	
+}
+/*NAVBAR*/
+.navbar-default{
+	background-color:white;
+	border:none;
+	padding-top:10px;
+	z-index:9;
+}
+/*NAVBAR LINKS*/
+.navbar-default .navbar-nav > li > a{
+	color:gray;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR ACTIVE*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR COLLAPSE SUBMENU*/
+nav div div div ul{
+	text-align:right;
+	padding-right:15px;
+}
+.dropdown-menu{
+	border:none;
+}
+/*CART ICON*/
+#icon_cart{
+	width:25px;
+	height:20px;
+	background-image: url('../img/icons/icon_cart1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float:right
+}
+#icon_cart:hover{
+	background-image: url('../img/icons/icon_cart2.png');
+}
+/*----------------------------------------------FOOTER------------------------------------------------------*/
+footer{
+	width:100%;
+	margin-bottom:25px;
+}
+.footerText{
+	width:80%;
+	margin:auto;
+	padding:10px 0 10px 0;
+ 	color:gray;
+	font-size: .8em;
+	vertical-align:center;
+}
+.footerText div:nth-child(1){
+	margin-top:5px;
+	float:left;
+}
+.footerText div:nth-child(2){
+	margin-top:-5px;
+	float:right;
+}
+/*SOCIAL MEDIA*/
+.social-slide {
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin-left:10px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide:hover {
+	background-size:cover;
+	background-position: 0px -24px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.facebook-hover {
+	background-image: url('../img/social/facebook-hover.png');
+}
+.google-hover {
+	background-image: url('../img/social/google-hover.png');
+}
+.linkedin-hover {
+	background-image: url('../img/social/linkedin-hover.png');
+}
+.instagram-hover {
+	background-image: url('../img/social/instagram-hover.png');
+}
+/*----------------------------------------------SHOPS PAGE-------------------------------------------*/
+section {
+	background-color: white;
+	text-align: center;
+	margin: -19px;
+	padding-bottom: 40px;
+}	
+main img {
+	padding-bottom: 30px;
+	width: 100%;
+}
+#shop_icon {
+	width: 25%;
+	padding: 0;
+	}
+span {
+	text-align: center;
+}
+.link{
+	padding-bottom:50px;
+}
+	
+	
+

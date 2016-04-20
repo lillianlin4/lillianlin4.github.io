@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* CSS Document */
+/*----------------------------------------------GENERAL-----------------------------------------------*/
+@font-face {
+    font-family: Cocon;
+    src: url(../fonts/cocon.ttf);
+}
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: opensansbold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+html, body {
+padding: 0;
+margin: 0;
+font-family: "Open Sans", sans-serif;
+}
+main{
+	clear:both;
+	margin: auto;
+	vertical-align: text-top;
+	text-align: center;
+}
+h1{
+	font-family: Cocon, sans-serif;
+	font-size: 3em;
+	padding-bottom:10px;
+}
+h2 {
+	font-family: opensansbold;
+	font-size: 1.2em;
+	color: rgb(66,46,32);
+	}
+h3{
+	font-family: Cocon, sans-serif;
+	font-size: 2.5em;
+}
+h5{
+	font-size: 1.5em;
+	line-height:150%;
+}
+p{
+	font-size: 1.2em;
+	margin:auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+a:link {
+	text-decoration: none;
+	color: rgb(199,178,153);
+}
+
+a:visited {
+	text-decoration: none;
+	color: rgb(199,178,153);
+}  
+a:hover {
+	color: rgb(255,188,41);
+}
+/*--------------------------------------------NAVIGATION BAR--------------------------------------------*/
+/*SITEID*/
+#siteID{
+	width:320px;
+	margin-top:10px;
+	margin-left:10px;
+	position:absolute;
+	z-index:99;	
+}
+/*NAVBAR*/
+.navbar-default{
+	background-color:white;
+	border:none;
+	padding-top:10px;
+	z-index:9;
+}
+/*NAVBAR LINKS*/
+.navbar-default .navbar-nav > li > a{
+	color:gray;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR ACTIVE*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	color: rgb(225,188,41);
+}
+/*NAVBAR COLLAPSE SUBMENU*/
+nav div div div ul{
+	text-align:right;
+	padding-right:15px;
+}
+.dropdown-menu{
+	border:none;
+}
+/*CART ICON*/
+#icon_cart{
+	width:25px;
+	height:20px;
+	background-image: url('../img/icons/icon_cart1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float:right;
+}
+#icon_cart:hover{
+	background-image: url('../img/icons/icon_cart2.png');
+}
+/*----------------------------------------------FOOTER------------------------------------------------------*/
+footer{
+	width:100%;
+	background-color:white;
+	margin-bottom:25px;
+	clear:both;
+}
+.footerText{
+	width:80%;
+	margin:auto;
+	padding:10px 0 10px 0;
+ 	color:gray;
+	font-size: .8em;
+	vertical-align:center;
+}
+.footerText div:nth-child(1){
+	margin-top:5px;
+	float:left;
+}
+.footerText div:nth-child(2){
+	margin-top:-5px;
+	float:right;
+}
+/*SOCIAL MEDIA*/
+.social-slide {
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin-left:10px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide:hover {
+	background-size:cover;
+	background-position: 0px -24px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.facebook-hover {
+	background-image: url('../img/social/facebook-hover.png');
+}
+.google-hover {
+	background-image: url('../img/social/google-hover.png');
+}
+.linkedin-hover {
+	background-image: url('../img/social/linkedin-hover.png');
+}
+.instagram-hover {
+	background-image: url('../img/social/instagram-hover.png');
+}
+/*-----------------------------------------------HOMEPAGE---------------------------------------------------*/
+#myCarousel{
+	margin-top:-19px;
+}
+section div{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:3% 5% 5% 5%;
+}
+section div img{
+	width:100%;
+}
+section:nth-child(2n){
+	color:rgb(66,46,32);
+}
+section:nth-child(2n+1){
+	background-color:rgb(66,46,32);
+	color:white;
+}
+section div div{
+	width:240px;
+	display:inline-block;
+	vertical-align:top;
+	margin:auto;
+	text-align:center;
+	
+}
+.location_icon{
+	width:350px;
+	padding: 20px 30px 0px 20px;
+}
+.health_focus_icon{
+	width:180px;
+	padding: 20px 30px 0px 20px;
+}
+#go_up{
+	width:30px;
+	margin:auto;
+	padding-top:20px;
+	opacity:.6;
+}
+#go_up:hover{
+	opacity:1;
+}
+.section_img{
+	width:100%;
+}
+.donate_img{
+	width:30%;
+	padding:2%;
+}
+/*----------------------------------------------SUPPLIERS PAGE-------------------------------------------*/
+
+#ETPlogo {
+	width: 300px;
+	padding-top: 20px;
+	text-align: center;
+	}	
+/*------------------------------------------------ABOUT PAGE----------------------------------------------*/
+/*
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#div_form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+	width:60%;
+	display:block;
+	color:rgb(66,46,32);
+}
+#contact_info{
+	width:30%;
+	display:block;
+}
+.row{
+	display:inline-block;
+}*/
+
+/*
+GOLD: rgb(255,188,41)
+BROWN: rgb(66,46,32)
+
+*/
