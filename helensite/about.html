@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--SEARCH ENGINE OPTIMIZATION (SEO)-->
+<meta name="description" content="Helen Lin">
+<meta name="keywords" content="Helen, Lin, about, contact, e-mail">
+<title>About</title>
+
+<!--FONT LINKS-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+
+<!--CSS & BOOTSTRAP LINKS-->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
+<style>
+#gif-container, #photo-container{
+	background-image: url("./img/main/background.gif");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:99;
+}
+</style>
+
+</head>
+
+<body onLoad="photoA()">
+	<!--HEADER-->
+	<header>
+    	<nav>
+            <!--SITEID-->
+        	<a href="./index.html"><img class="left" id="siteid" src="./img/hl_logo.svg"></a>
+            <!--NAVIGATION-->
+            <div class="right">
+                <table>
+                    <tr>
+                        <td><a href="./01_book/book.html">BOOK</a></td>
+                        <td><a href="./02_digital/digital.html">DIGITAL</a></td>
+                        <td><a href="./03_drawing/drawing.html">DRAWING</a></td>
+                        <td><a href="./04_painting/painting.html">PAINTING</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./05_woodwork/woodwork.html">WOODWORK</a></td>
+                        <td><a href="./06_photography/photography.html">PHOTOGRAPHY</a></td>
+                        <td><a href="./07_design/design.html">DESIGN</a></td>
+                        <td><a href="./about.html">ABOUT</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        <hr class="clear">
+    </header>
+
+    <!--MAIN-->
+    <main>
+    	<h1>ABOUT</h1>
+		<!--DESCRIPTION SECTION-->
+		<div id="about-container">
+			<div>
+				<p>Helen is an artist who’s particularly interested in narratives and the act of story-telling through art and books. She is currently exploring the boundaries separating different mediums, such as sculpture, photography, film, coding, and drawing. She loves clean bathrooms with nice lighting and has a mild fear of balloons. Currently she is an undergraduate student at Princeton University.</p>
+				<p><b>E-mail:</b> helenlin@princeton.edu</p>
+				<div id="gif-container" style="width:100%">
+					<img src="./img/08_about/willowtree.svg" style="width:100%;">
+				</div>
+			</div>
+			<div id="photo-container">
+				<img id="about-photo" src="./img/08_about/about_photo.jpg">
+			</div>
+		</div>
+
+	</main>
+
+    <!--FOOTER-->
+    <footer >
+        <hr>
+        <p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
+        <a href="lillianlin.me"> Website by Lillian Lin</a></p>
+    </footer>
+
+    <!--JAVASCRIPT-->
+</body>
+
+</html>

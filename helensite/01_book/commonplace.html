@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--SEARCH ENGINE OPTIMIZATION (SEO)-->
+<meta name="description" content="book">
+<meta name="keywords" content="book-making, book-binding, pop-up, book, shell, sketchbook, commonplace, systems, chinese, storybook, commonplace">
+<title>Commonplace</title>
+
+<!--FONT LINKS-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+
+<!--CSS & BOOTSTRAP LINKS-->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<style>
+*{
+	margin:0px;
+}
+#slider-container{
+	width:80%;
+	margin:auto;
+	background-color: red;
+}
+#slider {
+	height:600px;
+	width:100%;
+	margin: 50px auto;
+	position:relative;
+	border-radius:4px;
+	overflow:hidden;
+	background-color: rgb(57,45,37);
+}
+#image {
+	height:90%;
+	position:absolute;
+	left:20%;
+	top:5%;
+}
+.left_hold {
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.right_hold {
+	height: 400px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.left-arrow {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:140%;
+	left:20px;
+	transition: all .2s ease-in-out 0s;
+}
+.right-arrow {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:140%;
+	right:20px;
+	transition: all .5s ease-in-out 0s;
+}
+.left_hold:hover .left-arrow {
+	opacity:0.6;
+}
+.right_hold:hover .right-arrow {
+	opacity:0.6;
+}
+</style>
+
+<script type="text/javascript">
+var imageCount = 1;
+var total = 8;
+
+function photo(x) {
+	var image = document.getElementById('image');
+	imageCount = imageCount + x;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "../img/01_book/01_commonplace/commonplace"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "../img/01_book/01_commonplace/commonplace" + imageCount +".jpg";		
+	}
+	clearInterval(time); 								// clear interval stops the set interval.
+	time =  window.setInterval(function photoA() { 		// givig the value of time the samfunction below starts the loop 
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "../img/01_book/01_commonplace/commonplace"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "../img/01_book/01_commonplace/commonplace" + imageCount +".jpg";		
+	}
+	},5000);
+	}
+ 
+var time = window.setInterval(function photoA() {    // just adding the function to the variable so you can target it.
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "../img/01_book/01_commonplace/commonplace"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "../img/01_book/01_commonplace/commonplace" + imageCount +".jpg";		
+	}
+	}, 5000);
+</script>
+</head>
+
+<body onLoad="photoA()">
+	<!--HEADER-->
+	<header>
+    	<nav>
+            <!--SITEID-->
+        	<a href="../index.html"><img class="left" id="siteid" src="../img/hl_logo.svg"></a>
+            <!--NAVIGATION-->
+            <div class="right">
+                <table>
+                    <tr>
+                        <td><a href="./book.html">BOOK</a></td>
+                        <td><a href="../02_digital/digital.html">DIGITAL</a></td>
+                        <td><a href="../03_drawing/drawing.html">DRAWING</a></td>
+                        <td><a href="../04_painting/painting.html">PAINTING</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../05_woodwork/woodwork.html">WOODWORK</a></td>
+                        <td><a href="../06_photography/photography.html">PHOTOGRAPHY</a></td>
+                        <td><a href="../07_design/design.html">DESIGN</a></td>
+                        <td><a href="../about.html">ABOUT</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        <hr class="clear">
+    </header>
+
+    <!--MAIN-->
+    <main>
+    	<h1>BOOK - COMMONPLACE</h1>
+	    <!--SLIDER-->
+	    <div id="slider-container" class="desktop-display">
+			<div id="slider">
+				<div><img src="../img/01_book/01_commonplace/commonplace01.jpg" id="image"></div>
+			</div>
+			<div class="left_hold">
+				<img onClick="photo(-1)" class="left-arrow" src="https://image.freepik.com/free-icon/left-arrow_318-9161.jpg">
+			</div>
+			<div class="right_hold">
+				<img onClick="photo(1)" class="right-arrow" src="http://beautysecretsexposed.co/wp-content/uploads/2015/07/icon-ios7-arrow-forward-128.png">
+			</div>
+		</div>
+		<!--MOBILE DISPLAY-->
+		<div id="mobile-img">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace01.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace02.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace03.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace04.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace05.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace06.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace07.jpg">
+			<img class="mobile-display img-responsive" src="../img/01_book/01_commonplace/commonplace08.jpg">
+			<a href="#siteid"><p class="mobile-display">Go back up</p></a>
+		</div>
+		<!--DESCRIPTION SECTION-->
+		<div id="description-container">
+			<div class=".left">
+				<p><b>Title:</b> Commonplace</p>
+				<p><b>Date:</b> Text</p>
+				<p><b>Medium:</b> Text</p>
+			</div>
+			<div class=".right">
+				<p><b>Description</b></p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipusm has been the industry's standard dummy ever since the 1500s, when an unkown pinter took a gallery of tpe and scrambled it tomake a type specimen book.</p>
+			</div>
+		</div>
+
+	</main>
+
+    <!--FOOTER-->
+    <footer >
+        <hr>
+        <p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
+        <a href="lillianlin.me"> Website by Lillian Lin</a></p>
+    </footer>
+
+    <!--JAVASCRIPT-->
+</body>
+
+</html>
