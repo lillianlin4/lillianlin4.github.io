@@ -1,0 +1,180 @@
+<!doctype html>
+<html id="up">
+<head>
+<meta charset="UTF-8">
+
+<!--SEARCH ENGINE OPTIMIZATION (SEO)-->
+<meta name="description" content="systems">
+<meta name="keywords" content="systems">
+<title>Systems</title>
+
+<!--FONT LINKS-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+
+<!--CSS & BOOTSTRAP LINKS-->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
+<style>
+</style>
+
+<script type="text/javascript">
+var imageCount = 1;
+var total = 21;
+
+function photo(x) {
+	var image = document.getElementById('image');
+	imageCount = imageCount + x;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "./img/01_book/04_systems/systems"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "./img/01_book/04_systems/systems" + imageCount +".jpg";		
+	}
+	clearInterval(time); 								// clear interval stops the set interval.
+	time =  window.setInterval(function photoA() { 		// givig the value of time the samfunction below starts the loop 
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "./img/01_book/04_systems/systems"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "./img/01_book/04_systems/systems" + imageCount +".jpg";		
+	}
+	},5000);
+	}
+ 
+var time = window.setInterval(function photoA() {    // just adding the function to the variable so you can target it.
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	if(imageCount < 10){
+		image.src = "./img/01_book/04_systems/systems"+ 0 + imageCount +".jpg";
+	}
+	else{
+		image.src = "./img/01_book/04_systems/systems" + imageCount +".jpg";		
+	}
+	}, 5000);
+</script>
+</head>
+
+<body onLoad="photoA()">
+	<!--HEADER-->
+	<header>
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html"><img id="siteID" src="./img/hl_logo.svg"></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span id="menuButton">MENU</span>
+                        </button> 
+                    </div>
+                    <div class="navbar-collapse collapse navHeaderCollapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./book.html">BOOK</a><a href="./digital.html">DIGITAL</a></li>
+                            <li><a href="./drawing.html">DRAWING</a><a href="./painting.html">PAINTING</a></li>
+                            <li><a href="./woodwork.html">WOODWORK</a><a href="./photography.html">PHOTOGRAPHY</a></li>
+                            <li><a href="./design.html">DESIGN</a><a href="./about.html">ABOUT</a></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="container"><hr id="firstHr"></div>
+        </nav>
+    
+    </header>
+
+    <!--MAIN-->
+    <main>
+    	<div class="container">
+    	<h1>BOOK - SYSTEMS</h1>
+	    <!--SLIDER-->
+	    <div id="slider-container" class="desktop-display">
+			<div id="slider">
+				<div><img src="./img/01_book/04_systems/systems01.jpg" id="image"></div>
+			</div>
+			<div class="left_hold">
+				<img onClick="photo(-1)" class="left-arrow" src="./img/left_arrow.svg">
+			</div>
+			<div class="right_hold">
+				<img onClick="photo(1)" class="right-arrow" src="./img/right_arrow.svg">
+			</div>
+		</div>
+		<!--MOBILE DISPLAY-->
+		<div id="mobile-img">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems01.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems02.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems03.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems04.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems05.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems06.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems07.jpg">
+			<img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems08.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems09.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems10.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems11.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems12.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems13.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems14.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems15.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems16.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems17.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems18.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems19.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems20.jpg">
+            <img class="mobile-display img-responsive" src="./img/01_book/04_systems/systems21.jpg">
+            
+            
+            
+			<a href="#up" class="mobile-display"><img id="upArrow" src="./img/up_arrow.svg"></a>
+		</div>
+		<!--DESCRIPTION SECTION-->
+		<!--
+		<div id="description-container">
+			<div class=".left">
+				<p><b>Title:</b> Commonplace</p>
+				<p><b>Date:</b> Text</p>
+				<p><b>Medium:</b> Text</p>
+			</div>
+			<div class=".right">
+				<p><b>Description</b></p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipusm has been the industry's standard dummy ever since the 1500s, when an unkown pinter took a gallery of tpe and scrambled it tomake a type specimen book.</p>
+			</div>
+		</div>-->
+		</div>
+	</main>
+
+    <!--FOOTER-->
+    <footer class="container clear"><hr>
+        <div class="navbar navbar-static-bottom" role="navigation">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                
+                <p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
+                <a href="lillianlin.me"> Website by Lillian Lin</a></p>
+            </div>
+            <div id="socialIconDiv col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <a href="http://haphelen.tumblr.com/"><img class="socialIcon" src="./img/social/social_icon_tumblr.svg"></a>
+                <a href="https://twitter.com/haphelen"><img class="socialIcon" src="./img/social/social_icon_twitter.svg"></a>
+                <a href="https://www.instagram.com/heltiq/"><img class="socialIcon" src="./img/social/social_icon_instagram.svg"></a>
+            </div>
+        </div>
+
+    </footer>
+<!--JAVASCRIPT LINK-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

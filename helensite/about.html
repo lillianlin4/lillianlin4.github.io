@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="up">
 <head>
 <meta charset="UTF-8">
 
@@ -15,74 +15,82 @@
 <!--CSS & BOOTSTRAP LINKS-->
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/main.css" rel="stylesheet">
-<style>
-#gif-container, #photo-container{
-	background-image: url("./img/main/background.gif");
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	z-index:99;
-}
-</style>
 
 </head>
 
 <body onLoad="photoA()">
 	<!--HEADER-->
 	<header>
-    	<nav>
-            <!--SITEID-->
-        	<a href="./index.html"><img class="left" id="siteid" src="./img/hl_logo.svg"></a>
-            <!--NAVIGATION-->
-            <div class="right">
-                <table>
-                    <tr>
-                        <td><a href="./01_book/book.html">BOOK</a></td>
-                        <td><a href="./02_digital/digital.html">DIGITAL</a></td>
-                        <td><a href="./03_drawing/drawing.html">DRAWING</a></td>
-                        <td><a href="./04_painting/painting.html">PAINTING</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="./05_woodwork/woodwork.html">WOODWORK</a></td>
-                        <td><a href="./06_photography/photography.html">PHOTOGRAPHY</a></td>
-                        <td><a href="./07_design/design.html">DESIGN</a></td>
-                        <td><a href="./about.html">ABOUT</a></td>
-                    </tr>
-                </table>
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html"><img id="siteID" src="./img/hl_logo.svg"></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span id="menuButton">MENU</span>
+                        </button> 
+                    </div>
+                    <div class="navbar-collapse collapse navHeaderCollapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./book.html">BOOK</a><a href="./digital.html">DIGITAL</a></li>
+                            <li><a href="./drawing.html">DRAWING</a><a href="./painting.html">PAINTING</a></li>
+                            <li><a href="./woodwork.html">WOODWORK</a><a href="./photography.html">PHOTOGRAPHY</a></li>
+                            <li><a href="./design.html">DESIGN</a><a href="./about.html">ABOUT</a></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+                
             </div>
+            <div class="container"><hr id="firstHr"></div>
         </nav>
-        <hr class="clear">
+    
     </header>
 
     <!--MAIN-->
-    <main>
+    <main class="container">
     	<h1>ABOUT</h1>
 		<!--DESCRIPTION SECTION-->
-		<div id="about-container">
-			<div>
+		<div class="row">
+            <div id="photo-container" class="col-lg-5 col-md-5 col-sm-6 col-xs-12 mobile-display">
+                <img id="about-photo" src="./img/08_about/about_photo.jpg">
+            </div>
+			<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
 				<p>Helen is an artist who’s particularly interested in narratives and the act of story-telling through art and books. She is currently exploring the boundaries separating different mediums, such as sculpture, photography, film, coding, and drawing. She loves clean bathrooms with nice lighting and has a mild fear of balloons. Currently she is an undergraduate student at Princeton University.</p>
-				<p><b>E-mail:</b> helenlin@princeton.edu</p>
-				<div id="gif-container" style="width:100%">
-					<img src="./img/08_about/willowtree.svg" style="width:100%;">
-				</div>
+				<p><b>Contact: helenlin@princeton.edu</b></p>
 			</div>
-			<div id="photo-container">
+			<div id="photo-container" class="col-lg-5 col-md-5 col-sm-6 col-xs-12 desktop-display">
 				<img id="about-photo" src="./img/08_about/about_photo.jpg">
 			</div>
 		</div>
+		<a href="#up" class="mobile-display"><img id="upArrow" src="./img/up_arrow.svg"></a>
 
 	</main>
 
     <!--FOOTER-->
-    <footer >
-        <hr>
-        <p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
-        <a href="lillianlin.me"> Website by Lillian Lin</a></p>
+    <footer class="container"><hr>
+        <div class="navbar navbar-static-bottom" role="navigation">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                
+                <p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
+                <a href="http://lillianlin.me/"> Website by Lillian Lin</a></p>
+            </div>
+            <div id="socialIconDiv col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <a href="http://haphelen.tumblr.com/"><img class="socialIcon" src="./img/social/social_icon_tumblr.svg"></a>
+                <a href="https://twitter.com/haphelen"><img class="socialIcon" src="./img/social/social_icon_twitter.svg"></a>
+                <a href="https://www.instagram.com/heltiq/"><img class="socialIcon" src="./img/social/social_icon_instagram.svg"></a>
+            </div>
+        </div>
+
     </footer>
 
-    <!--JAVASCRIPT-->
-</body>
+<!--JAVASCRIPT LINK-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+</body>
 </html>

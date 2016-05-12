@@ -1,0 +1,2 @@
+R O O M is an interative illustration that maps the change in one student's room over the course of his first school year. Items get moved around. 
+This collaborative project with Jonathan Zong, Sarah Wang, Kathleen Ma, and Savannah Du can be viewed HERE (link to http://jonathanzong.github.io/room/).

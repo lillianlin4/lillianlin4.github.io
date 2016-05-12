@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html id="up">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--SEARCH ENGINE OPTIMIZATION (SEO)-->
 <meta name="description" content="homepage of portfolio website of multidisciplinary studio student artist, Helen Lin">
@@ -16,21 +18,27 @@
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
 
 <!--CSS & BOOTSTRAP LINKS-->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
 
 <style>
 body{
-	background-image: url("./img/main/background.gif");
+	background-image: url("./img/main/background2.gif");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	z-index:-99;
+	background-attachment: fixed;
 }
 main{
 	padding:0;
+	margin-top:3%;
+}
+small{
+	font-size: .8em;
 }
 </style>
 </head>
@@ -42,39 +50,46 @@ main{
     
     <!--MAIN-->
     <main>
-    	<a href="./01_book/book.html"><img id="nametag" src="./img/main/nametag_blank.png"></a>
+    	<a href="./book.html"><img id="nametag" src="./img/main/nametag2.png"></a>
     	<div id="nametag-content-div">
-    	<img id="nametag-content" src="./img/main/nametag_content.png">
+    		<img id="nametag-content" src="./img/main/nametag_content2.png">
     	</div>
     	<ul id="homelist">
-    		<li><u>THINGS I DO</u></li>
-    		<li class="homelist-nolink">ART</li>
-    		<li><a class="homelist-link" href="01_book/book.html">BOOK-BINDING</a></li>
-    		<li><a class="homelist-link" href="./01_book/book.html">BOOK-MAKING</a></li>
-    		<li><a class="homelist-link" href="./03_drawing/drawing.html">ILLUSTRATIONS</a></li>
-    		<li><a class="homelist-link" href="#">PAINTING</a></li>
-    		<li class="homelist-nolink">FILM</li>
-    		<li class="homelist-nolink">STORYBOARD</li>
-    		<li><a class="homelist-link" href="#">PHOTOGRAPHY</a></li>
-    		<li><a class="homelist-link" href="#">WOODWORK</a></li>
-    		<li class="homelist-nolink">CERAMIC</li>
-    		<li><a class="homelist-link" href="#">INTERACTIVE DIGITAL MEDIA</a></li>
-    		<li class="homelist-nolink">EMBROIDERY</li>
-    		<li class="homelist-nolink">GIVE PEOPLE LOVE AND CARE</li>
-    		<li class="homelist-nolink">FOLD THOUSANDS OF SHEETS OF PAPER</li>
-    		<li class="homelist-nolink">PUZZLES</li>
-    		<li><a class="homelist-link" href="#">GRAPHIC DESIGN</a></li>
-    		<li class="homelist-nolink">OFFBEAT JOBS</li>
-    		<li class="homelist-nolink">ODD JOBS</li>
+    		<li><u>Here is a list of things I can do:</u></li>
+    		<li class="homelist-nolink">My own Art <small>(art with capital A)</small></li>
+    		<li><a class="homelist-link" href="./book.html">Book-binding & book-making</a></li>
+    		<li><a class="homelist-link" href="./drawing.html">Illustration</a></li>
+    		<li><a class="homelist-link" href="./painting.html">Painting</a></li>
+    		<li class="homelist-nolink">Filming & editing video</li>
+    		<li class="homelist-nolink">Storyboarding</li>
+    		<li><a class="homelist-link" href="./photography.html">Photography</a></li>
+    		<li><a class="homelist-link" href="./woodwork.html">Woodworking</a></li>
+    		<li><a class="homelist-link" href="./digital.html">Interactive digital media</a></li>
+    		<li class="homelist-nolink">Embroidery</li>
+    		<li class="homelist-nolink">Giving people love and care</li>
+    		<li class="homelist-nolink">Folding thousands of sheets of paper</li>
+    		<li class="homelist-nolink">Making puzzles</li>
+    		<li><a class="homelist-link" href="./design.html">Graphic design</a></li>
+    		<li class="homelist-nolink">Offbeat jobs</li>
+    		<li class="homelist-nolink">Odd jobs</li>
     		<br>
-    		<li class="homelist-nolink">JOB I WON'T TAKE: STUFF THAT'S BORING AS HELL</li>
+    		<li class="homelist-nolink">Jobs I won't take: stuff that's boring</li>
+    		<br>
+	    		<a href="http://haphelen.tumblr.com/"><img class="socialIconHomepage" src="./img/social/social_icon_tumblr.svg"></a>
+	    		<a href="https://twitter.com/haphelen"><img class="socialIconHomepage" src="./img/social/social_icon_twitter.svg"></a>
+	    		<a href="https://www.instagram.com/heltiq/"><img class="socialIconHomepage" src="./img/social/social_icon_instagram.svg"></a>
+    		<br><br>
+    		<li class="homelist-nolink"><b>Email me for any requests: <br>helenlin@princeton.edu</b></li>
+
+    		<a href="#up"><img id="upArrow" src="./img/up_arrow.svg"></a>
     	</ul>
 
     </main>
     
     <!--FOOTER-->
     <footer id="home-footer">
-    	<p>All content &copy; 2016 Helen Lin. Please do not copy without express written permission.<br>
+    	<p>All content &copy; 2016 Helen Lin. 
+    		<br>Please do not copy without express written permission.<br>
     	<a href="lillianlin.me">Website by Lillian Lin</a></p>
     </footer>
 </body>
