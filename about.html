@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="up">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Lillian Lin</title>
+    <title>About</title>
+
     <!---CSS LINKS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!---TEXT LINKS -->
-    <link href='https://fonts.googleapis.com/css?family=Exo:400,700,200,100,100italic,200italic,300,300italic,500,400italic,500italic,600,600italic,800,700italic,800italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,700,600,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+
     <!-- FAVICON LINKS -->
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="./favicon.ico">
@@ -33,63 +36,81 @@
     <meta name="msapplication-TileImage" content="./favicon-144.png">
     <meta name="msapplication-config" content="/browserconfig.xml">
   </head>
-  </head>
 
   <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- Button for responsive design -->
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span> <!-- Make it accesible friendly for screen readers -->
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Site ID -->
-           <a class="navbar-brand" href="//lillianlin.me"><img class="siteID" src="./img/logo2.jpg"></a>
+    <header>
+        <nav>
+            <!-- NAVBAR -->
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container">
+                <!-- Site ID -->
+                <a class="navbar-brand" href="//lillianlin.me" style="display:inline-block;"><img class="siteID" src="./img/siteid.svg"></a>
+                <div class="navbar-header">
+                  <!-- Button for responsive design -->
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span> <!-- Make it accesible friendly for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  
+                </div>
+                <div class="navbar-collapse collapse" >
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="//lillianlin.me">PORTFOLIO</a></li>
+                    <!--<li><a href="./art.html">ART</a></li>-->
+                    <li><a href="./about.html"><span class="activelink">ABOUT</span></a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--WORK-->
+        <div class="work">
+        <div class="container">
+            <div class="row">
+            <!-- DESCRIPTION -->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="description">
+                        <h1>About</h1>
+                        <p>Lillian Lin is a Graphic Designer with experience in both web and print. She tackles design problems based on positons such as the creative artist and the analytical thinker. As a creative artist, she seeks out the visually interesting and unusual. The focus is on challenging the viewer to think beyond the ordinary and on providing them with emotive and memorable experiences. As an analytical thinker, she seeks out facts and rationale, embracing structure and legibility in design in order to present content in a simplified way that can be understood with comfortable ease by the public. Rather than viewing these aspects as contradictions, she believes in flexible thinking, treating every project differently based on its specific needs and goals. 
+                        </p>
+                        <br><hr><br>
+                        <h6>Resume</h6>
+                        <p><a class="sourceLink" href="./img/LillianLin_resume_web.pdf" target="_blank">View Resume</a></p>
+                    </div>
+                </div>
+                <!-- IMAGES -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="imgDiv">
+                            <img class="img-responsive" src="./img/aboutme.jpg">
+                        </div>
+                </div>
+            </div>
+
+            
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="//lillianlin.me">PORTFOLIO</a></li>       
-            <li><a href="./about.html"><span style="color:rgb(18,195,244);"><del>ABOUT</del></span></a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
-          </ul>
         </div>
-      </div>
-    </div>
 
-    <!--AVATARS-->
-    <div class="container">
-	    <div class="row">
-	    	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<div class="descrip">
-					<h1>About</h1>
-					<p>Hi, I’m Lillian Lin, a senior Graphic Design student at Binghamton University, State University of New York. With experience in design for print and web at Vida Shoes International and Department of Residential Life at Binghamton University, I’ve created graphics for events, advertisements, websites, and educational purposes. Beyond the visual arts, my interests include web technology, storytelling, and games. I’m always enthusiastic to learn new knowledge and skills to continuously improve myself as a designer, problem-solver, artist, and person.</p>
 
-				</div>
-	    	</div>
-	    	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					<div class="imgDiv">
-						<img class="img-responsive" src="./img/aboutme.jpg">
-					</div>
-          <div class="imgDiv">
-            <img class="img-responsive" src="./img/true.jpg">
-          </div>
-          <div class="imgDiv">
-            <img class="img-responsive" src="./img/craft.jpg">
-          </div>
-	    	</div>
-	</div>
+    </main>
 
-    <!-- FOOTER -->
-    <div class="navbar navbar-static-bottom" role="navigation">
-    	<div class="container" id="cr">
-			Copyright &#169; 2016 Lillian Lin
-    	</div>
-    </div>
+    <footer>
+        <!-- FOOTER -->
+        <div class="container">
+            <div class="navbar navbar-static-bottom" role="navigation">
+              <div class="container" id="cr">
+              Copyright &#169; 2016 Lillian Lin
+              </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -97,7 +118,4 @@
 
   </body>
 </html>
-
-
-
 
